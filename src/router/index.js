@@ -1,6 +1,8 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from '../views/Home.vue';
+import Vue2DateRangePicker from '../views/Vue2DateRangePicker.vue';
+import VueTimeDateRangePicker from '../views/VueTimeDateRangePicker.vue';
 
 Vue.use(VueRouter)
 
@@ -11,14 +13,14 @@ const routes = [
     component: Home
   },
   {
-    path: '/date1',
-    name: 'Date1',
-    component: () => import('../views/Date1.vue')
+    path: '/d1',
+    name: 'Vue2DateRangePicker',
+    component: Vue2DateRangePicker,
   },
     {
-    path: '/date2',
-    name: 'Date2',
-    component: () => import('../views/Date2.vue')
+    path: '/d2',
+    name: 'VueTimeDateRangePicker',
+    component: VueTimeDateRangePicker,
   },
 ]
 

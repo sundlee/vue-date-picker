@@ -24,7 +24,7 @@
 import DatePicker from 'vue-time-date-range-picker/dist/vdprDatePicker'
 
 export default {
-  name: 'Date2',
+  name: 'VueTimeDateRangePicker',
   components: {
     DatePicker,
     // CalendarDialog,

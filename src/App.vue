@@ -2,8 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/Date1">Date1</router-link> |
-      <router-link to="/Date2">Date2</router-link>
+      <router-link to="/d1">Vue2DateRangePicker</router-link> |
+      <router-link to="/d2">VueTimeDateRangePicker</router-link>
     </div>
     <router-view/>
   </div>
