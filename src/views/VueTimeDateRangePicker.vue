@@ -2,10 +2,12 @@
   <div class="date2">
     <h1>vue-time-date-range-picker</h1>
     <date-picker
-      language="en"
+      language="ko"
       apply-button-label="use"
-      :show-helper-buttons="true" 
-      :switch-button-initial="true"
+      :show-helper-buttons="false" 
+      switch-button-label="종일 일정"
+      :switch-button-initial="false"
+      :inline="true"
       :is-monday-first="true"
       :date-input="{
         inputClass: 'my_class'
@@ -16,18 +18,26 @@
         inputClass: 'my_custom_class',
       }"
     />
+    <br>
+    <br>
+    <br>
+    <br>
+    <calendar-dialog
+      apply-button-label="선택"
+      switch-button-label="종일 일정"
+      :show-helper-buttons="false" 
+    />
   </div>
 </template>
 
 <script>
-// import DatePicker, { CalendarDialog } from 'vue-time-date-range-picker/dist/vdprDatePicker'
-import DatePicker from 'vue-time-date-range-picker/dist/vdprDatePicker'
+import DatePicker, { CalendarDialog } from 'vue-time-date-range-picker/dist/vdprDatePicker'
 
 export default {
   name: 'VueTimeDateRangePicker',
   components: {
     DatePicker,
-    // CalendarDialog,
+    CalendarDialog,
   },
   data() {
     const startDate = new Date();
