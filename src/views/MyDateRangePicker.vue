@@ -119,7 +119,7 @@
             </b-form-group>
           </section> -->
           <section class="button-box">
-            <b-button>적용</b-button> 
+            <b-button @click="toggle">적용</b-button> 
           </section>
         </b-card>
       </div>  
